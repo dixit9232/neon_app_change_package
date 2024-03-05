@@ -1,0 +1,114 @@
+name: sanmill
+description: Sanmill is a open-source, powerful UCI-like Nine Men's Morris (and its variants) program.
+publish_to: none
+version: 4.0.9+3929
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  animated_text_kit: 4.1.1
+  catcher:
+    git:
+      url: https://gitlab.com/calcitem/catcher.git
+  collection: 1.18.0
+  copy_with_extension: 5.0.4
+  cupertino_icons: 1.0.6
+  device_info_plus: 9.0.3
+  extended_sliver: 2.1.3
+  feedback: 2.6.0
+  filesystem_picker: 4.1.0
+  fluentui_system_icons: 1.1.189
+  flutter:
+    sdk: flutter
+  flutter_colorpicker: 1.0.3
+  flutter_email_sender: 6.0.2
+  flutter_localizations:
+    sdk: flutter
+  flutter_platform_alert:
+    git:
+      url: https://gitlab.com/calcitem/flutter_platform_alert.git
+      ref: main
+  flutter_picker: 2.1.0
+  hive: 2.2.3
+  hive_flutter: 1.1.0
+  image: 4.1.3
+  intl: 0.18.1
+  json_annotation: 4.8.1
+  logger: 1.4.0
+  marquee: 2.2.3
+  package_info_plus: 4.1.0
+  path_provider: 2.1.1
+  share_plus: 7.1.0
+  sliver_tools: 0.2.12
+  soundpool:
+    git:
+      url: https://gitlab.com/calcitem/soundpool.git
+      ref: master
+      path: soundpool
+  soundpool_windux:
+    git:
+      url: https://gitlab.com/calcitem/soundpool.git
+      ref: windows_linux_support
+      path: soundpool_windux
+  url_launcher: 6.1.14
+  uuid: 3.0.7
+
+dev_dependencies:
+  analyzer:
+  build_runner: 2.4.8
+  change_app_package_name:
+  copy_with_extension_gen: 5.0.4
+  flutter_driver:
+    sdk: flutter
+  flutter_gen_runner: 5.4.0
+  flutter_native_splash: 2.3.3
+  flutter_test:
+    sdk: flutter
+  hive_generator: 2.0.1
+  json_serializable: 6.7.1
+  flutter_lints: 3.0.1
+  mockito: 5.4.4
+  msix: 3.16.7
+  source_gen: 1.5.0
+  test: any
+
+flutter_gen:
+  output: lib/generated/assets/
+
+flutter:
+  generate: false
+  uses-material-design: true
+  assets:
+#    - assets/files/git-branch.txt
+#    - assets/files/git-revision.txt
+    - assets/licenses/GPL-3.0.txt
+    - assets/audios/draw.mp3
+    - assets/audios/fly.mp3
+    - assets/audios/go.mp3
+    - assets/audios/illegal.mp3
+    - assets/audios/lose.mp3
+    - assets/audios/mill.mp3
+    - assets/audios/place.mp3
+    - assets/audios/remove.mp3
+    - assets/audios/select.mp3
+    - assets/audios/win.mp3
+    - assets/images/background_image_1.jpg
+    - assets/images/background_image_2.jpg
+    - assets/images/background_image_3.jpg
+    - assets/images/background_image_4.jpg
+    - assets/images/background_image_5.jpg
+
+flutter_intl:
+  enabled: true
+
+msix_config:
+  display_name: Mill (N Men's Morris)
+  publisher_display_name: Calcitem Studio
+  identity_name: 25314CalcitemStudio.Sanmill
+  publisher: CN=3413C020-B420-4E0A-8687-A2C35E878F3A
+  logo_path: ..\..\..\fastlane\metadata\android\en-US\images\icon.png
+  capabilities: ""
+  languages: en-us, de-de, hu-hu, pt-br, tr-tr, zh-cn, ko-kr
+  execution_alias: mill
+  store: true
